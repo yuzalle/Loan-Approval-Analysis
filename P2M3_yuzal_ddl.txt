@@ -1,0 +1,27 @@
+--DDL--
+
+--Create Database
+create database "db_m3";
+
+--Create Table
+CREATE TABLE table_m3 (
+    "Loan_ID" VARCHAR(20) PRIMARY KEY,
+    "Gender" VARCHAR(10),
+    "Married" VARCHAR(5),
+    "Dependents" VARCHAR(10),
+    "Education" VARCHAR(20),
+    "Self_Employed" VARCHAR(5),
+    "ApplicantIncome" INT,
+    "CoapplicantIncome" FLOAT,
+    "LoanAmount" INT,
+    "Loan_Amount_Term" INT,
+    "Credit_History" INT,
+    "Property_Area" VARCHAR(20),
+    "Loan_Status" CHAR(1)
+);
+
+--Import Data
+COPY table_m3("Loan_ID", "Gender", "Married", "Dependents", "Education", "Self_Employed","ApplicantIncome","CoapplicantIncome", "LoanAmount","Loan_Amount_Term", "Credit_History", "Property_Area", "Loan_Status")
+FROM 'P2M3_yuzal_data_raw.csv'
+DELIMITER ','
+CSV HEADER;

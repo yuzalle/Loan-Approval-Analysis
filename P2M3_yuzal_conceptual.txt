@@ -1,0 +1,21 @@
+1. NoSQL adalah Not Only SQL. NoSQL ini merujuk pada sistem basis data yang tidak menggunakan SQL untuk mengelola data. NoSQL tidak menggunakan table yang kaku dan relasional, tetapi lebih fleksibel dalam menyimpan data. Pengelolaan struktur data dalam berbagai format yang dinamis dan tidak selalu konsisten.
+
+2. Kapan harus menggunakan NoSQL dan Relational Database Management System. 
+NoSQL: Data yang dimiliki berstruktur tidak kaku artinya berubah terus dan tidak terstruktur, skala NoSQL yang diperlukan ialah horizontal, kinerja yang lebih baik untuk operasi baca dan tulis dibandingkan data yang ketat.
+
+RDBMS: Ketika data yang dimiliki mempunyai struktur yang jelas dan konsisten, jika pada data memerlukan transaksi yang kompleks dan konsisten, dan data perlu memiliki relasi antar table.
+
+3. Tools/Platform NoSQL
+MongoDB: Document oriented, data yang disimpan dalam format JSON yang memungkinkan fleksibilitas dan skalabilitas, cocok untuk kebutuhan skala besar karena menggunakan skala horizontal.
+
+Redis: Platform ini sederhana, cepan dan efisien untuk penyimpanan dan pengambilan data. Data disimpan dalam memori memberikan latensi yang sangat rendah dan kinerja yang tinggi. Redis juga mendukung struktur data yang kompleks.
+
+4. Airflow adalah platform open-source yang digunakan untuk membangun, menjadwalkan, dan memantau alur kerja(workflow) dalam pemrosesan data. 
+
+5. Great Expectations adalah alat untuk memvalidasi data. Alat ini sangat berguna untuk memastikan data yang diproses memenuhi standar yang diinginkan sebelum digunakan lebih lanjut. Dengan Great Expectations, kita dapat mencegah masalah yang timbul karena data yang tidak sesuai dengan harapan.
+
+6. Batch Processing adalah Teknik pemrosesan data dimana data dikumpulkan selama periode Waktu tertentu dan kemudian di proses secara bersamaan, batch prosessing mengelompokkan data dan memprosesnya dalam interval waktu tertentu.
+
+Contoh kasus: Pemberian gaji karyawan pada akhir atau awal bulan menggunakan data yang dikumpulkan sepanjang bulan meliputi hari izin, sakit dan yang lainnya.
+
+Tools: Dapat menggunakan Apache Airflow untuk mengelola dan menjadwalkan batch processing workflow.
